@@ -299,7 +299,7 @@ h4 {
 }
 
 .timeline ul li.in-view > div {
-  transform: none;
+  transform:  nlin;
   visibility: visible;
   opacity: 1;
   border-radius: 5px;
@@ -441,4 +441,33 @@ h4 {
 
 .highlight-credit{
   color: rgb(65, 65, 65);
+}
+
+/*make it horizonal*/
+.timeline {
+  overflow-x: auto; /* Add this line to make the timeline scrollable */
+}
+
+.timeline ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap; /* Change this line to prevent the items from wrapping to the next line */
+}
+
+.timeline-item {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin: 10px;
+}
+
+/* The rest of your CSS stays the same */
+
+.timeline ul li.type1 > div {
+  background: #efefef;
+}
+
+ul{
+  list-style-type: none;
+  width: 100%;
 }

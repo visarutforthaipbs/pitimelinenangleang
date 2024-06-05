@@ -36,6 +36,7 @@ for(var i = 0; i < data.length; i++) {
   // Check if any of the text data columns have content
   if (data[i].story || data[i].trasportation || data[i].culture) { // Add this line as the condition
     var item = document.createElement("li");
+    item.className = "timeline-item"; // Add this line
     var htmlString = "<div>";
     htmlString += "<div class='time'>พ.ศ." + data[i].Period + "</div>";
     htmlString += "<div class='story'> บริบท 🏠 | " + data[i].story + "</div>"; // Main story
